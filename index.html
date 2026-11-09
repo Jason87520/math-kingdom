@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#FFF8E7">
+  <meta name="description" content="数学王国探险：面向小学五年级的数学情境解题游戏">
+  <title>数学王国探险</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/screens.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <div class="app-shell">
+    <main id="screen" class="screen" aria-live="polite"></main>
+  </div>
+
+  <div id="modal-root"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <noscript>
+    <div class="noscript">请打开浏览器的 JavaScript，才能进入数学王国哦。</div>
+  </noscript>
+
+  <!-- 原生脚本按顺序加载：不使用 ES Module，保证双击 index.html 也能直接玩 -->
+  <script src="js/questions.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/parent.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
